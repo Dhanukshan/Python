@@ -1,11 +1,20 @@
-lower=int(input("enter lower range:"))
-upper=int(input("enter upper range:"))
-for num in range(lower,upper+1):
-    sum=0
-    temp=num
-    while temp>0:
-        digit=temp%10
-        sum=sum+(digit**3)
-        temp=temp//10
-        if sum==num:
-            print(num)
+name=input("enter name:")
+age=int(input("enter age:"))
+gender=input("enter gender:")
+number_of_days=int(input("enter number of days:"))
+if(age>=18 and age<=30):
+    if(gender=='m'):
+        wages=number_of_days*700
+        print("Wages:",wages)
+    else:
+        wages=number_of_days*700
+        print("Wages:",wages)
+elif(age>=30 and age<=40):
+    if(gender=='m'):
+        wages=number_of_days*800
+        print("Wages:",wages)
+    else:
+        wages=number_of_days*800
+        print("Wages:",wages)
+else:
+    print("Invalid..!!")
